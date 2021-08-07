@@ -75,8 +75,7 @@ class ContactCell: UITableViewCell {
             stackView.leftAnchor.constraint(equalTo: imageStack.rightAnchor, constant: 10),
             stackView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
             stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -5)
-        ])
-        
+        ])        
     }
     
     required init?(coder: NSCoder) {
@@ -97,7 +96,5 @@ class ContactCell: UITableViewCell {
         } else {
             cell.imageContact.image = UIImage(named: "Photo")
         }
-        
-        
     }
 }

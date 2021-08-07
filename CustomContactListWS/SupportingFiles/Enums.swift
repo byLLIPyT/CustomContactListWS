@@ -8,7 +8,6 @@
 import Foundation
 
 enum CellIdentifier {
-   static let cellIdentifier = "Cell"
-   static let detailViewControllerIdentifier = "showDetail"
+   static let cellIdentifier = "Cell"   
 }
 
