@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AB8FDC5826BE889700F64E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8FDC5726BE889700F64E9E /* AppDelegate.swift */; };
-		AB8FDC5A26BE889700F64E9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8FDC5926BE889700F64E9E /* SceneDelegate.swift */; };
-		AB8FDC5C26BE889700F64E9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8FDC5B26BE889700F64E9E /* ViewController.swift */; };
-		AB8FDC5F26BE889700F64E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8FDC5D26BE889700F64E9E /* Main.storyboard */; };
 		AB8FDC6126BE889A00F64E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8FDC6026BE889A00F64E9E /* Assets.xcassets */; };
 		AB8FDC6426BE889A00F64E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8FDC6226BE889A00F64E9E /* LaunchScreen.storyboard */; };
+		AB8FDC7526BE8B1800F64E9E /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8FDC7426BE8B1800F64E9E /* MainTableViewController.swift */; };
+		AB8FDC7926BE915500F64E9E /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8FDC7826BE915500F64E9E /* ContactCell.swift */; };
+		AB8FDC7C26BE930D00F64E9E /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8FDC7B26BE930D00F64E9E /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB8FDC5426BE889700F64E9E /* CustomContactListWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomContactListWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8FDC5726BE889700F64E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB8FDC5926BE889700F64E9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB8FDC5B26BE889700F64E9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AB8FDC5E26BE889700F64E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB8FDC6026BE889A00F64E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB8FDC6326BE889A00F64E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB8FDC6526BE889A00F64E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB8FDC7426BE8B1800F64E9E /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		AB8FDC7826BE915500F64E9E /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		AB8FDC7B26BE930D00F64E9E /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,39 @@
 		AB8FDC5626BE889700F64E9E /* CustomContactListWS */ = {
 			isa = PBXGroup;
 			children = (
-				AB8FDC5726BE889700F64E9E /* AppDelegate.swift */,
-				AB8FDC5926BE889700F64E9E /* SceneDelegate.swift */,
-				AB8FDC5B26BE889700F64E9E /* ViewController.swift */,
-				AB8FDC5D26BE889700F64E9E /* Main.storyboard */,
-				AB8FDC6026BE889A00F64E9E /* Assets.xcassets */,
-				AB8FDC6226BE889A00F64E9E /* LaunchScreen.storyboard */,
-				AB8FDC6526BE889A00F64E9E /* Info.plist */,
+				AB8FDC6E26BE893600F64E9E /* Managers */,
+				AB8FDC6D26BE892200F64E9E /* Views */,
+				AB8FDC6C26BE891800F64E9E /* SupportingFiles */,
 			);
 			path = CustomContactListWS;
+			sourceTree = "<group>";
+		};
+		AB8FDC6C26BE891800F64E9E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AB8FDC5726BE889700F64E9E /* AppDelegate.swift */,
+				AB8FDC6026BE889A00F64E9E /* Assets.xcassets */,
+				AB8FDC6526BE889A00F64E9E /* Info.plist */,
+				AB8FDC7B26BE930D00F64E9E /* Enums.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AB8FDC6D26BE892200F64E9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB8FDC6226BE889A00F64E9E /* LaunchScreen.storyboard */,
+				AB8FDC7826BE915500F64E9E /* ContactCell.swift */,
+				AB8FDC7426BE8B1800F64E9E /* MainTableViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB8FDC6E26BE893600F64E9E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +150,6 @@
 			files = (
 				AB8FDC6426BE889A00F64E9E /* LaunchScreen.storyboard in Resources */,
 				AB8FDC6126BE889A00F64E9E /* Assets.xcassets in Resources */,
-				AB8FDC5F26BE889700F64E9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +160,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB8FDC5C26BE889700F64E9E /* ViewController.swift in Sources */,
+				AB8FDC7926BE915500F64E9E /* ContactCell.swift in Sources */,
+				AB8FDC7526BE8B1800F64E9E /* MainTableViewController.swift in Sources */,
+				AB8FDC7C26BE930D00F64E9E /* Enums.swift in Sources */,
 				AB8FDC5826BE889700F64E9E /* AppDelegate.swift in Sources */,
-				AB8FDC5A26BE889700F64E9E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AB8FDC5D26BE889700F64E9E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB8FDC5E26BE889700F64E9E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AB8FDC6226BE889A00F64E9E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +304,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2KRRAMT3WK;
-				INFOPLIST_FILE = CustomContactListWS/Info.plist;
+				INFOPLIST_FILE = CustomContactListWS/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.neosoft.CustomContactListWS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +324,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2KRRAMT3WK;
-				INFOPLIST_FILE = CustomContactListWS/Info.plist;
+				INFOPLIST_FILE = CustomContactListWS/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.neosoft.CustomContactListWS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
