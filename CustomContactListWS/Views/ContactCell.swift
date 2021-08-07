@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Contacts
+import ContactsUI
 
 class ContactCell: UITableViewCell {
 
@@ -21,4 +23,6 @@ class ContactCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func configure(with contact: CNContact, cell: ContactCell) {
+    }
 }
