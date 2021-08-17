@@ -28,7 +28,7 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkPrivacy()
+        
         
         tableView.register(ContactCell.self, forCellReuseIdentifier: CellIdentifier.cellIdentifier)
         searchController.searchResultsUpdater = self
@@ -39,6 +39,15 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
         navigationItem.hidesSearchBarWhenScrolling = false
         
         configureRefreshControl()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        checkPrivacy()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
     
     // MARK: - Table view data source
